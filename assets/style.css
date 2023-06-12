@@ -1,0 +1,62 @@
+/* RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    --bs-gutter-x: 0rem;
+}
+
+/*content*/
+
+header, footer {
+    background-color: black;
+}
+
+#fondpartenaire {
+    width : 100%;
+    height: 275px;
+}
+
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(10px)
+}
+
+.video_conteneur {
+    object-fit: cover; 
+}
+
+.logo_content {
+    width : 300px; 
+    margin : 25px
+}
+
+.partenaires{
+    width : 150px;
+    margin: 10px;
+}
+
+.artistes {
+    width: 100px;
+    margin: 10px;
+    align-items: center;
+}
+
+/*buttons*/
+
+.reservation-button {
+    width: 700px;
+    
+}
+
+
+
+
