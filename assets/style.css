@@ -73,6 +73,13 @@ header, footer {
     border-radius: 5%;
 }
 
+.billeterie {
+    margin: 150px 500px;
+}
+.billeterie-box {
+    border-radius: 5%;
+}
+
 /*buttons*/
 
 .reservation-button {
