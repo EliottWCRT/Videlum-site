@@ -10,12 +10,34 @@
     box-sizing: border-box;
     --bs-gutter-x: 0rem;
 }
-
 /*content*/
 
+h2 {
+    font-family: uniwars, sans-serif;
+    font-style: semibold;
+          font-weight: 300;
+}
+.logo {
+    transition: filter 0.5s;
+  }
+  .logo:hover {
+    filter: brightness(60%); 
+  }
 header, footer {
     background-color: black;
 }
+#btnreserv {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+#btnreserv:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
 
 #fondpartenaire {
     width : 100%;
@@ -45,9 +67,10 @@ header, footer {
 }
 
 .artistes {
-    width: 100px;
-    margin: 10px;
+    width: 200px;
+    margin: 20px;
     align-items: center;
+    border-radius: 5%;
 }
 
 /*buttons*/
@@ -57,6 +80,11 @@ header, footer {
     
 }
 
-
+.flou {
+    filter: blur(15px)
+}
+blockquote {
+    width: 10%;
+}
 
 
