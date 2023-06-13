@@ -17,12 +17,26 @@ h2 {
     font-style: semibold;
           font-weight: 300;
 }
+
+.nav-item a {
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.nav-item a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+}
+
+
 .logo {
     transition: filter 0.5s;
-  }
-  .logo:hover {
-    filter: brightness(60%); 
-  }
+}
+.logo:hover {
+filter: brightness(60%); 
+}
 header, footer {
     background-color: black;
 }
