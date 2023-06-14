@@ -222,12 +222,17 @@ filter: brightness(60%);
     color: white;
 }
 
+#anonsouligne {
+    text-decoration: none;
+}
+
 .btnbilletterie2:hover {
     border: 2px solid black;
     color: black;
 }
 
 .txtbtn2 {
+    text-decoration: none;
     margin-right: 500px;
     margin: 0% 0% 0px;
     
@@ -235,3 +240,4 @@ filter: brightness(60%);
 #hnavbar:hover {
     border-bottom: 1px solid white;
 }
+
