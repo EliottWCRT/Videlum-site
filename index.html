@@ -6,181 +6,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/vlr4aqz.css"> <!--lien des polices-->
     <title>Accueil KMB</title> <!--Titre de la page-->
 </head>
 <body>
+    <!---------------------------Vidéo de fond-------------------------->
+    
+    <div class="container video_conteneur">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="assets/ressource/video_fond.mp4" alt="degrade colore" type="video/mp4">
+        </video>
+    </div>
     <!--------------------------Header-------------------------->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark mb-3">
-            <ul class="navbar-nav navbar-collapse">   
+        <nav class="navbar navbar-expand-lg navbar-dark mb-3 uniwars-semibold">
+            <ul class="navbar-nav navbar-collapse justify-content-center align-items-center header-margin">  
                 <li class="nav-item pt-sm-2 mx-auto d-flex">       
                     <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width : 85px; margin : 8.5px"></a>
                 </li>
                 <li class="nav-item mx-auto d-flex">       
-                    <a href="a_propos.html"><h2 class="text-header text-light">A propos</h2></a>
+                    <a id="hnavbar" href="index.html"><h4 class="text-header text-light">Accueil</h4></a>
+                </li>
+                <li class="nav-item mx-auto d-flex">       
+                    <a id="hnavbar" href="a_propos.html"><h4 class="text-header text-light">Le Festival</h4></a>
                 </li>
                 <li class="nav-item mx-auto d-flex"> 
-                    <a href="contact.html"><h2 class="text-header text-light" href="contact.html">Contact</h2>
+                    <a id="hnavbar" href="contact.html"><h4 class="text-header text-light" href="contact.html">Contact</h4>
                 </li>  
                 <li class="nav-item pt-sm-2 mx-auto d-flex"> 
                     <div class="container-fluid my-2 justify-content-end">
-                        <a href="billetterie.html"><button  type="button" class="btn btn-light btn-sm">
-                            <h2>Accès Billetterie</h2>
-                        </button></a>
+                        <a href="billetterie.html">
+                            <button class=btnbilletterie>
+                                <h4 class="txtbtn">La Billetterie</h4>
+                            </button>
+                        </a>
                     </div>
                 </li> 
             </ul>
         </nav>
     </header>
-    <!---------------------------Vidéo de fond-------------------------->
+    <br><br><br>
     <content class="text-white">
-        <div class="container video_conteneur">
-            <video autoplay loop muted plays-inline class="back-video">
-                <source src="assets/ressource/video_fond.mp4" alt="degrade colore" type="video/mp4">
-            </video>
-        </div>
         <!--------------------------Logo-------------------------->
-        <div class="row container-fluid">
-            <div class="col">
-                <img class="logo_content" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo">
-            </div>
-            <!--------------------------Dates et addresse-------------------------->
-            <div class="col">
-                <h1>
-                    <br><br>
-                    6 et 7 oct 2023 <br>
-                    Parc des expositions <br>
-                    Caen
-                </h1>
-            </div>
-        </div>
-        <!--------------------------Call to action-------------------------->
-        <div class="row container-fluid justify-content-center">
-            <div class="col-12 col-sm-6 mb-5 col-md-4 text-center d-flex flex-column align-items-center text-center">
-                <a href="billeterie.html"><button id=btnreserv type="button" class="btn btn-dark btn-lg btn-block reservation-button">
-                    Réserver
-                </button></a>
+        <div class="content-margin"><br><br><br><br><br><br><br>
+            <div class="row container-fluid">
+                <div class="col">
+                    <br><br><br><img class="logo_content" src="assets/ressource/kmb blanc baseline.svg" alt="logo">
+                </div>
+                <!--------------------------Dates et addresse-------------------------->
+                <div class="col purista-semibold">
+                    <h1 class="txt-align-right">
+                        FESTIVAL DE<br>
+                        MUSIQUE TECHNO<br><br>
+
+                        6 & 7 Octobre 2023<br>
+                        Parc des Expositions Caen<br><br>
+                    </h1>
+                    <a href="billetterie.html" style="display: flex; justify-content: flex-end;"><button class="btnbilletterie2 uniwars-semibold">
+                        <h4 class="txtbtn">je réserve mon billet </h4>
+                    </button></a>
+                </div>
             </div>
         </div>
-        <br>
+        <br><br><br><br><br>
         <!--------------------------Description-------------------------->
-        <div class="row container-fluid justify-content-center mb-5">
-            <div class="text-center">
-                <h3>
-                    KMB festival débarque à Caen. Cette première édition,  vous invite à un voyage  hors du temps <br>
-                    en découvrant comment 9 femmes venues des quatre coins du monde transmettent <br>
-                    une énergie enivrante, en partageant une passion : LA  MUSIQUE TECHNO !<br><br>  
-                    
-                    Kmb promet une expérience immersive au-delà de la simple démonstration musicale... 
-                </h3>
+        <div id="background">
+            <div>
+                <div class="row container-fluid justify-content-center mb-5 content-margin">
+                    <div class="text-center">
+                        <h3 class="purista-medium mt-5">
+                            KMB festival débarque à Caen. Cette première édition,  vous invite à un voyage  hors du temps <br>
+                            en découvrant comment 9 femmes venues des quatre coins du monde transmettent <br>
+                            une énergie enivrante, en partageant une passion : <strong>LA  MUSIQUE TECHNO !</strong><br><br>  
+                            
+                            Kmb promet une expérience immersive au-delà de la simple démonstration musicale... 
+                        </h3>
+                    </div>
+                </div>
+                <!--------------------------titre programme-------------------------->
+                <div class="row container-fluid justify-content-center mb-3">
+                    <div class="text-center ">
+                        <h2 class="uniwars-semibold">La Programmation</h2>
+                    </div>
+                </div>
+                <br>
+                <!--------------------------Artistes-------------------------->
+                <div class="artistes-margin">
+                    <div class="row">
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_1.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_2.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_3.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_4.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_5.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_6.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_7.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_8.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/artistes/artiste_9.png" alt="carre noir" class="artistes"/>
+                            <h3></h3>
+                        </div>
+                    </div>     
+                </div>
+                <br>
+                <div class="container-fluid d-flex justify-content-center">
+                    <a href="billetterie.html">
+                        <button class="btnbilletterie">
+                            <h4 class="txtbtn uniwars-semibold">je réserve mon billet </h4>
+                        </button>
+                    </a>
+                </div>
+                <br><br><br><br><br>
+                <!--------------------------Partenaires-------------------------->
+                <h1 class="text-center text-light mb-3 uniwars-semibold">Nos partenaires</h1>
+                <br><br>
+                <div class="partenaires-margin">
+                    <div class="row container-fluid justify-content-center mb-3">
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/carre_blanc.png" alt="carre noir" class="partenaires rounded-circle">
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/carre_blanc.png" alt="carre noir" class="partenaires rounded-circle">
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/carre_blanc.png" alt="carre noir" class="partenaires rounded-circle">
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/carre_blanc.png" alt="carre noir" class="partenaires rounded-circle">
+                        </div>
+                        <div class="col d-flex flex-column align-items-center text-center">
+                            <img src="assets/ressource/carre_blanc.png" alt="carre noir" class="partenaires rounded-circle">
+                        </div>     
+                    </div>
+                </div>
+                <br>
+                <h1 class="text-center text-light mb-3 uniwars-semibold">Suivez-nous sur les réseaux !</h1>
+                <br>
             </div>
-        </div>
-        <!--------------------------titre programme-------------------------->
-        <div class="row container-fluid justify-content-center mb-3">
-            <div class="text-center">
-                <h2>Programmation :</h2>
-            </div>
-        </div>
-        <br>
-        <!--------------------------Artistes-------------------------->
-        <div class="row container-fluid justify-content-center mb-3">
-            <div class="row">
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_1.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_2.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_3.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_4.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_5.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_6.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-            </div>  
-            <div class="row">
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_7.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_8.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-                <div class="col d-flex flex-column align-items-center text-center">
-                    <img src="assets/ressource/artistes/artiste_9.png" alt="carre noir" class="artistes"/>
-                    <h3></h3>
-                </div>
-            </div>     
-        </div>
-        <br>
-        <!--------------------------Partenaires-------------------------->
-        <h1 class="text-center text-light mb-3">Ils nous ont fait confiance</h1>
-        <div class="row container-fluid justify-content-center mb-3">
-            <div class="col d-flex flex-column align-items-center text-center">
-                <img src="assets/ressource/carre_noir.png" alt="carre noir" class="partenaires rounded-circle">
-            </div>
-            <div class="col d-flex flex-column align-items-center text-center">
-                <img src="assets/ressource/carre_noir.png" alt="carre noir" class="partenaires rounded-circle">
-            </div>
-            <div class="col d-flex flex-column align-items-center text-center">
-                <img src="assets/ressource/carre_noir.png" alt="carre noir" class="partenaires rounded-circle">
-            </div>
-            <div class="col d-flex flex-column align-items-center text-center">
-                <img src="assets/ressource/carre_noir.png" alt="carre noir" class="partenaires rounded-circle">
-            </div>
-            <div class="col d-flex flex-column align-items-center text-center">
-                <img src="assets/ressource/carre_noir.png" alt="carre noir" class="partenaires rounded-circle">
-            </div>     
         </div>
     </content>
     <!--------------------------Footer-------------------------->
     <footer>
         <div class="text-light">
             <div class="row container-fluid">
-                    <div class="col m-2 d-flex flex-column align-items-end text-end">
-                        <!--------------------------differente pages-------------------------->
-                        <div class="col-md-4">
-                            <h5 class="mb-3">Pages</h5>
-                            <ul class="list-unstyled">
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="a_propos.html">À propos</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            </ul>
+                <div class="col m-2 d-flex flex-column align-items-end text-end">
+                    <!--------------------------differente pages-------------------------->
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Pages</h5>
+                        <ul class="list-unstyled">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="a_propos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 mt-3 text-center">
+                        <!--------------------------Réseau sociaux-------------------------->
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="https://www.instagram.com/kmb_festival/#"><img src="assets/ressource/logo-insta.png" style="width : 13%"></a></li>
+                        </ul>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="row ">
-                          <div class="col-12 col-sm-6 col-md-4 mt-3 text-center">
-                            <!--------------------------bouton reserver-------------------------->
-                            <a href="billetterie.html">
-                                <button type="button" class="btn btn-light btn-lg btn-block">
-                                    Réserver
-                                </button> 
-                            </a>
-                            <!--------------------------Réseau sociaux-------------------------->
-                            <ul class="list-unstyled mt-3">
-                                <li><a href="https://www.instagram.com/kmb_festival/#"><img src="assets/ressource/logo-insta.png" style="width : 13%"></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>                                          
-                </div>
+                </div>                                          
+            </div>
         </div>
     </footer>
     <!--------------------------Script-------------------------->

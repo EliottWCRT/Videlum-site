@@ -10,12 +10,83 @@
     box-sizing: border-box;
     --bs-gutter-x: 0rem;
 }
-/*content*/
 
-h2 {
-    font-family: uniwars, sans-serif;
-    font-style: semibold;
-          font-weight: 300;
+/* ===============   Polices   ==================*/
+
+.uniwars-semibold {
+    font-family: "uniwars", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.purista-semibold {
+    font-family: "purista-web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.purista-semibold-italic {
+    font-family: "purista-web", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.purista-medium {
+    font-family: "purista-web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.purista-medium-italic {
+    font-family: "purista-web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.purista-light {
+    font-family: "purista-web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.purista-light-italic {
+    font-family: "purista-web", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/* =============== content =============== */
+
+body {
+    margin-top: 0;
+  }
+  
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.header-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.partenaires-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.artistes-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+header, footer {
+    background-color: black;
+}
+
+
+
+.content-margin {
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .nav-item a {
@@ -30,16 +101,24 @@ h2 {
     outline: none;
 }
 
+    
+
+
+.txt-align-right {
+    text-align: end;
+}
+
+
 
 .logo {
     transition: filter 0.5s;
 }
+
 .logo:hover {
 filter: brightness(60%); 
 }
-header, footer {
-    background-color: black;
-}
+
+
 #btnreserv {
     background-color: black;
     color: white;
@@ -52,18 +131,17 @@ header, footer {
     border: 2px solid black;
 }
 
-
 #fondpartenaire {
     width : 100%;
     height: 275px;
 }
 
 .back-video {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
-    filter: blur(10px)
+    filter: blur(10px);
 }
 
 .video_conteneur {
@@ -76,36 +154,84 @@ header, footer {
 }
 
 .partenaires{
-    width : 150px;
+    width : 125px;
     margin: 10px;
 }
 
 .artistes {
-    width: 200px;
+    width: 275px;
     margin: 20px;
     align-items: center;
-    border-radius: 5%;
 }
 
-.billeterie {
+.billeterie-box {
     margin: 150px 500px;
 }
-.billeterie-box {
-    border-radius: 5%;
+
+.contact-box {
+    margin: 50px 300px
 }
 
-/*buttons*/
+#contactcard {
+    background-color: black;
+}
 
-.reservation-button {
-    width: 700px;
+#background {
+    background-color: black;
+}
+
+/*  =========  buttons  ========== */
+
+#message {
+    margin-right: 500px;
+    height: 200px;
+}
+
+#acces {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 5px;
+    border-color: white;
+}
+
+.txtbtn {
+    margin: 0% 0% 0px;
+}
+.btnbilletterie {
+    border-radius: 20px; 
+    background-color: black; 
+    border: 2px solid white; 
+    padding: 10px 20px; 
+    color: white;
+}
+.btnbilletterie:hover {
+    background-color: white; 
+    border: 2px solid black; 
+    color: black;
+}
+.txtbtn {
+    margin: 0% 0% 0px;
+}
+
+.btnbilletterie2 {
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+}
+
+.btnbilletterie2:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+.txtbtn2 {
+    margin-right: 500px;
+    margin: 0% 0% 0px;
     
 }
-
-.flou {
-    filter: blur(15px)
+#hnavbar:hover {
+    border-bottom: 1px solid white;
 }
-blockquote {
-    width: 10%;
-}
-
-
