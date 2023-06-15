@@ -10,27 +10,28 @@
     <title>Billetterie KMB</title> <!--Titre de la page-->
 </head>
 <body>
+    <div class="background_black fullscreen-dark"></div>
     <!--------------------------header-------------------------->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark mb-3 uniwars-semibold">
+        <nav class="navbar navbar-expand-lg navbar-dark uniwars-semibold">
             <ul class="navbar-nav navbar-collapse justify-content-center align-items-center header-margin">  
                 <li class="nav-item pt-sm-2 mx-auto d-flex">       
                     <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width : 85px; margin : 8.5px"></a>
                 </li>
                 <li class="nav-item mx-auto d-flex">       
-                    <a id="hnavbar" href="index.html"><h4 class="text-header text-light">Accueil</h4></a>
+                    <a id="hnavbar" href="index.html"><h4 class="text-header text-light pt-20">Accueil</h4></a>
                 </li>
                 <li class="nav-item mx-auto d-flex">       
-                    <a id="hnavbar" href="a_propos.html"><h4 class="text-header text-light">Le Festival</h4></a>
+                    <a id="hnavbar" href="a_propos.html"><h4 class="text-header text-light pt-20">Le Festival</h4></a>
                 </li>
                 <li class="nav-item mx-auto d-flex"> 
-                    <a id="hnavbar" href="contact.html"><h4 class="text-header text-light" href="contact.html">Contact</h4>
+                    <a id="hnavbar" href="contact.html"><h4 class="text-header text-light pt-20" href="contact.html">Contact</h4>
                 </li>  
                 <li class="nav-item pt-sm-2 mx-auto d-flex"> 
                     <div class="container-fluid my-2 justify-content-end">
                         <a href="billetterie.html">
                             <button class=btnbilletterie>
-                                <h4 class="txtbtn">La Billetterie</h4>
+                                <h4 class="txtbtn pt-20">La Billetterie</h4>
                             </button>
                         </a>
                     </div>
@@ -39,58 +40,72 @@
         </nav>
     </header>
     <content class="text-white">
-        <!--------------------------video de fond-------------------------->
-        <div class="container video_conteneur">
-            <video autoplay loop muted plays-inline class="back-video">
-                <source src="assets/ressource/video_fond.mp4" alt="degrade colore" type="video/mp4">
-            </video>
+    <!--------------------------video de fond-------------------------->
+    <div class="background_black">
+        <br><br><br><br><br><br> 
+        <div>
+            <img id="imgbilletterie" src="assets/ressource/onde page billetterie.png" width="100%">
         </div>
-    </content>
-        <!--------------------------billetterie-------------------------->
-        <div class="billeterie-box">
-            <a title="Logiciel billetterie en ligne"
-                            href="https://weezevent.com/?c=sys_widget"
-                            class="weezevent-widget-integration"
-                            data-src="https://widget.weezevent.com/ticket/E999592/?code=77370&locale=fr-FR&width_auto=1&color_primary=00AEEF"
-                            data-width="650"
-                            data-height="600"
-                            data-id="999592"
-                            data-resize="1"
-                            data-width_auto="1"
-                            data-noscroll="0"
-                            data-use-container="yes"
-                            data-type="neo"
-                            target="_blank">Billetterie Weezevent</a>
-                            <script type="text/javascript" src="https://widget.weezevent.com/weez.js"></script>
-        </div>
+    </div>
+    <!--------------------------billetterie-------------------------->
+    <div>
+        <div id="weezevent">
+            <br><br><br><br>
+            <div class="billeterie-box">
+                <a title="Logiciel billetterie en ligne"
+                                href="https://weezevent.com/?c=sys_widget"
+                                class="weezevent-widget-integration"
+                                data-src="https://widget.weezevent.com/ticket/E999592/?code=77370&locale=fr-FR&width_auto=1&color_primary=00AEEF"
+                                data-width="650"
+                                data-height="600"
+                                data-id="999592"
+                                data-resize="1"
+                                data-width_auto="1"
+                                data-noscroll="0"
+                                data-use-container="yes"
+                                data-type="neo"
+                                target="_blank">Billetterie Weezevent</a>
+                                <script type="text/javascript" src="https://widget.weezevent.com/weez.js"></script>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
     <footer>
-        <div class="text-light">
-            <div class="row container-fluid">
-                    <div class="col m-2 d-flex flex-column align-items-end text-end">
-                        <!--------------------------differente pages-------------------------->
-                        <div class="col-md-4">
-                            <h5 class="mb-3">Pages</h5>
-                            <ul class="list-unstyled">
-                            <li><a href="index.html">Accueil</a></li>
-                            <li><a href="a_propos.html">À propos</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            </ul>
+        <div class="footer-container">
+            <div class="text-light uniwars-semibold">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width: 150px; margin: 15px"></a>
+                        </div>  
+                        <div class="col-12 col-md-6">
+                            <div class="row mt-5">
+                                <div class="col-6">
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="index.html">Accueil</a></h5>
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="contact.html">Contact</a></h5>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="a_propos.html">Le Festival</a></h5>
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="billetterie.html">Billetterie</a></h5>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="row ">
-                          <div class="col-12 col-sm-6 col-md-4 mt-3 text-center">
-                            <!--------------------------Réseau sociaux-------------------------->
-                            <ul class="list-unstyled mt-5">
-                                <li><a href="https://www.instagram.com/kmb_festival/#"><img src="assets/ressource/logo-insta.png" style="width : 13%"></a></li>
-                                <li><a href="https://www.facebook.com/profile.php?id=100093637717933"><img src="assets/ressource/facebook.png" style="width : 13%"></a></li>
-                            </ul>
-                          </div>
+                        <div class="col-12 col-md-3">
+                            <div class="row mt-5">
+                                <div class="col-12">
+                                    <h5 class="uniwars-semibold">Nos Réseaux</h5>
+                                </div>
+                                <div class="col-6">
+                                    <a class="rsfooter" href="https://www.instagram.com/kmb_festival/#"><img src="assets/ressource/logo-insta.png" style="width: 18%"></a>
+                                    <a class="rsfooter" href="https://www.facebook.com/profile.php?id=100093637717933"><img src="assets/ressource/facebook.png" style="width: 18%"></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>                                          
+                    </div>   
                 </div>
+            </div>
         </div>
     </footer>
+        </div>
+    </div>
     <script href="assets/script/script.js"></script>
 </body>
 </html>

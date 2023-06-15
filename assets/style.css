@@ -11,6 +11,28 @@
     --bs-gutter-x: 0rem;
 }
 
+/* ===============  Taille Polices   ==================*/
+
+.pt-17 {
+    font-size: 10pt !important;
+}
+
+.pt-20 {
+    font-size: 12pt !important;
+}
+
+.pt-25 {
+    font-size: 15pt !important;
+}
+
+.pt-45 {
+    font-size: 20pt !important;
+}
+
+.pt-80 {
+    font-size: 32pt !important;
+}
+
 /* ===============   Polices   ==================*/
 
 .uniwars-semibold {
@@ -18,7 +40,11 @@
     font-weight: 600;
     font-style: normal;
 }
-
+.uniwars-regular {
+    font-family: "uniwars", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .purista-semibold {
     font-family: "purista-web", sans-serif;
     font-weight: 600;
@@ -50,6 +76,41 @@
     font-style: italic;
 }
 
+/* =============== margin =============== */
+
+.header-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.sous-header-margin {
+    margin-left: 190px;
+    margin-right: 190px;
+}
+.partenaires-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.artistes-margin {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.text-content-margin-left {
+    margin-left: 200px;
+}
+.text-content-margin-right {
+    margin-right: 200px;
+}
+header, footer {
+    background-color: black;
+}
+
+.content-margin {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.margin-bottom-content {
+    margin-bottom: 200px;
+}
 
 /* =============== content =============== */
 
@@ -66,28 +127,6 @@ header {
     z-index: 9999;
 }
 
-.header-margin {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.partenaires-margin {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.artistes-margin {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-header, footer {
-    background-color: black;
-}
-
-
-
-.content-margin {
-    margin-left: 250px;
-    margin-right: 250px;
-}
 
 .nav-item a {
     text-decoration: none;
@@ -100,22 +139,29 @@ header, footer {
     background-color: transparent;
     outline: none;
 }
-
-    
-
+#imgbilletterie {
+    flex: auto;
+    z-index: -1px;
+}
+#weezevent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+}
 
 .txt-align-right {
     text-align: end;
 }
-
-
 
 .logo {
     transition: filter 0.5s;
 }
 
 .logo:hover {
-filter: brightness(60%); 
+    filter: brightness(60%); 
 }
 
 
@@ -148,9 +194,41 @@ filter: brightness(60%);
     object-fit: cover; 
 }
 
+.background_black {
+    position: relative;
+    background-color: black;
+}
+
+.img_page_festival {
+    position: absolute;
+    top: 136.8px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 1;
+}
+  
 .logo_content {
     width : 300px; 
     margin : 25px
+}
+
+.logo_content-white {
+    width : 400px; 
+    margin : 25px
+}
+
+.logo_content_Festival {
+    width : 475px; 
+    margin-left: 130px
 }
 
 .partenaires {
@@ -159,7 +237,7 @@ filter: brightness(60%);
 }
 
 .logo-reseaux {
-    width : 125px;
+    width : 75px;
     margin: 10px;
 }
 .artistes {
@@ -184,6 +262,41 @@ filter: brightness(60%);
     background-color: black;
 }
 
+
+
+.footer-container {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.footer-text {
+    display: inline;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-text:hover {
+    border-bottom: 1px solid white;
+}
+.rsfooter:hover {
+    filter: brightness(60%); 
+}
+.rs:hover {
+    filter: brightness(60%);
+}
+.footer-billeterie {
+    position: absolute !important;
+    z-index: 9999;
+}
+
+.fullscreen-dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+  
 /*  =========  buttons  ========== */
 
 #message {
@@ -203,7 +316,7 @@ filter: brightness(60%);
     margin: 0% 0% 0px;
 }
 .btnbilletterie {
-    border-radius: 20px; 
+    border-radius: 15px; 
     background-color: black; 
     border: 2px solid white; 
     padding: 10px 20px; 
@@ -226,6 +339,19 @@ filter: brightness(60%);
     color: white;
 }
 
+.btnaccueil2 {
+    border-radius: 14px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+}
+
+.btnaccueil2:hover {
+    border: 2px solid black;
+    color: black;
+}
+
 #anonsouligne {
     text-decoration: none;
 }
@@ -244,4 +370,84 @@ filter: brightness(60%);
 #hnavbar:hover {
     border-bottom: 1px solid white;
 }
+#imgcontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#emailcontact {
+    position: absolute;
+    z-index: 9998;
+}
 
+footer {
+    padding: 10px;
+    border-top: 2px solid #707070;
+    /* Autres styles du footer */
+  }
+header {
+    border-bottom: 2px solid #707070;
+    /* Autres styles du footer */
+  }
+
+
+  /* Styles pour les écrans de largeur inférieure ou égale à 767px (téléphones mobiles) */
+@media (max-width: 767px) {
+    /* Réduire la taille du logo */
+    .logo {
+        width: 60px;
+        margin: 8px;
+    }
+
+    /* Centrer les éléments du menu */
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Espacement des éléments du menu */
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    /* Réduire la taille du texte du menu */
+    .text-header {
+        font-size: 14px;
+    }
+
+    /* Réduire la taille du texte des boutons */
+    .txtbtn {
+        font-size: 14px;
+    }
+
+    /* Réduire la taille du texte de la description */
+    .purista-medium {
+        font-size: 16px;
+    }
+
+    /* Réduire la taille du texte de la programmation */
+    .uniwars-semibold {
+        font-size: 24px;
+    }
+
+    /* Réduire la taille du texte des artistes */
+    .artistes h3 {
+        font-size: 12px;
+    }
+
+    /* Réduire la taille du texte des partenaires */
+    .partenaires-margin .partenaires {
+        width: 30px;
+    }
+
+    /* Réduire la taille du texte du footer */
+    .footer-text {
+        font-size: 12px;
+    }
+
+    /* Réduire la taille du logo du footer */
+    .rsfooter img {
+        width: 10%;
+    }
+}
