@@ -153,11 +153,15 @@ filter: brightness(60%);
     margin : 25px
 }
 
-.partenaires{
+.partenaires {
     width : 125px;
     margin: 10px;
 }
 
+.logo-reseaux {
+    width : 125px;
+    margin: 10px;
+}
 .artistes {
     width: 275px;
     margin: 20px;
