@@ -11,43 +11,99 @@
 </head>
 <body>
     <!--------------------------Header-------------------------->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark uniwars-semibold">
-            <ul class="navbar-nav navbar-collapse justify-content-center align-items-center header-margin">  
-                <li class="nav-item pt-sm-2 mx-auto d-flex">       
-                    <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width : 85px; margin : 8.5px"></a>
-                </li>
-                <li class="nav-item mx-auto d-flex">       
-                    <a id="hnavbar" href="index.html"><h4 class="text-header text-light pt-20">Accueil</h4></a>
-                </li>
-                <li class="nav-item mx-auto d-flex">       
-                    <a id="hnavbar" href="a_propos.html"><h4 class="text-header text-light pt-20">Le Festival</h4></a>
-                </li>
-                <li class="nav-item mx-auto d-flex"> 
-                    <a id="hnavbar" href="contact.html"><h4 class="text-header text-light pt-20" href="contact.html">Contact</h4>
-                </li>  
-                <li class="nav-item pt-sm-2 mx-auto d-flex"> 
-                    <div class="container-fluid my-2 justify-content-end">
-                        <a href="billetterie.html">
-                            <button class=btnbilletterie>
-                                <h4 class="txtbtn pt-20">La Billetterie</h4>
-                            </button>
-                        </a>
+    <div class="disappear">
+        <header>
+            <input type="checkbox" id="toggle">
+            <nav class="navbar navbar-expand-lg navbar-dark uniwars-semibold">
+                <ul class="navbar-nav navbar-collapse justify-content-center align-items-center header-margin">  
+                    <li class="nav-item pt-sm-2 mx-auto d-flex">       
+                        <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width : 85px; margin : 8.5px"></a>
+                    </li>
+                    <li class="nav-item mx-auto d-flex">       
+                        <a id="hnavbar" href="index.html"><h4 class="text-header text-light pt-20">Accueil</h4></a>
+                    </li>
+                    <li class="nav-item mx-auto d-flex">       
+                        <a id="hnavbar" href="a_propos.html"><h4 class="text-header text-light pt-20">Le Festival</h4></a>
+                    </li>
+                    <li class="nav-item mx-auto d-flex"> 
+                        <a id="hnavbar" href="contact.html"><h4 class="text-header text-light pt-20" href="contact.html">Contact</h4>
+                    </li>  
+                    <li class="nav-item pt-sm-2 mx-auto d-flex"> 
+                        <div class="container-fluid my-2 justify-content-end">
+                            <a href="billetterie.html">
+                                <button class=btnbilletterie>
+                                    <h4 class="txtbtn pt-20">La Billetterie</h4>
+                                </button>
+                            </a>
+                        </div>
+                    </li> 
+                    <li class="nav-item pt-sm-2 mx-auto d-flex">       
+                        <a href="#"><img class="logo" src="assets/ressource/drapeau_français.svg" alt="drapeau_français" style="width : 50px; margin : 5px"></a>
+                    </li>
+                    <li class="nav-item pt-sm-2 mx-auto d-flex">       
+                        <a href="contact_eng.html"><img class="logo" src="assets/ressource/drapeau_anglais.svg" alt="drapeau_anglais" style="width : 50px; margin : 5px"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="disappear-m">
+        <header>
+            <input type="checkbox" id="toggle">
+            <nav class="navbar navbar-expand-lg navbar-dark uniwars-semibold">
+                <div class="container">
+                    <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width: 85px; margin: 8.5px"></a>
+                    <label id="toggle" class="navbar-toggler" for="toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </label>
+                    <div class="collapse navbar-collapse"  id="additionalMenuItems">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" href="index.html"><h4 class="text-light pt-3">Accueil</h4></a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" href="a_propos.html"><h4 class="text-light pt-3">Le Festival</h4></a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" href="contact.html"><h4 class="text-light pt-3">Contact</h4></a>
+                            </li>
+                            <li class="nav-item mx-auto">
+                                <a class="nav-link" href="billetterie.html"><h4 class="text-light pt-3">Billetterie</h4></a>
+                            </li>
+                            <li class="nav-item pt-sm-2 mx-auto d-flex langue">       
+                                <a href="#"><img class="logo" src="assets/ressource/drapeau_français.svg" alt="drapeau_français" style="width : 50px; margin : 8.5px"></a>
+                                <a href="contact_eng.html"><img class="logo" src="assets/ressource/drapeau_anglais.svg" alt="drapeau_anglais" style="width : 50px; margin : 8.5px"></a>
+                            </li>
+                        </ul>
                     </div>
-                </li> 
-            </ul>
-        </nav>
-    </header> 
+                </div>
+            </nav>
+        </header>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    var toggle = $("#toggle");
+                    var additionalMenuItems = $("#additionalMenuItems");
+    
+                    toggle.on("click", function() {
+                        console.log("Clic sur le menu burger");
+                        additionalMenuItems.slideToggle();
+                    });
+                });
+            </script>
+        </div>
     <br>
-    <content class="text-white">
+    <content class="text-white ">
         <div class="background_black">
             <br><br><br><br><br><br><br>
-            <h1 class="text-center uniwars-semibold">une question ?</h1>
-            <h1 class="text-center uniwars-semibold">contactez-nous !</h1>
+            <h1 class="text-center uniwars-semibold pt-80">une question ?</h1>
+            <h1 class="text-center uniwars-semibold pt-80">contactez-nous !</h1>
             <br><br>
                 <div id="imgcontact">
-                        <h3 id="emailcontact" class="purista-medium pt-80">kmb.festival@gmail.com</h3>
-                        <img src="assets/ressource/Fichier 2.png" width="55%">
+                        <h3 id="emailcontact" class="purista-medium">kmb.festival@gmail.com</h3>
+                        <img class="imgfondcontent" src="assets/ressource/Fichier 2.png">
                 </div>
 
             
@@ -60,14 +116,14 @@
           </div>
     </content>
     <br><br><br>
-    <!--------------------------Footer-------------------------->
-    <footer>
+      <!--------------------------Footer-------------------------->
+      <footer class="disappear">
         <div class="footer-container">
             <div class="text-light uniwars-semibold">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-md-3">
-                            <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width: 150px; margin: 15px"></a>
+                            <a href="index.html"><img class="logo_footer" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo"></a>
                         </div>  
                         <div class="col-12 col-md-6">
                             <div class="row mt-5">
@@ -84,19 +140,47 @@
                         <div class="col-12 col-md-3">
                             <div class="row mt-5">
                                 <div class="col-12 text-center">
-                                    <h5 class="uniwars-semibold">Nos Réseaux</h5>
+                                    <h5 class="uniwars-semibold disappear">Nos Réseaux</h5>
                                 </div>
-                                <div class="col-12 text-center">
+                                <div class="col-12 text-center disappear">
                                     <a class="rsfooter" href="https://www.instagram.com/kmb_festival/#"><img src="assets/ressource/logo-insta.png" style="width: 9%"></a>
                                     <a class="rsfooter" href="https://www.facebook.com/profile.php?id=100093637717933"><img src="assets/ressource/facebook.png" style="width: 9%"></a>
                                 </div>
                             </div>
                         </div>
-                    </div>   
+                    </div>  
+                    <p class="text-center text-light pt-15 purista-medium disappear">Conditions générales de ventes - <a href="politique_de_confidentialite.html">Politique de confidentialité</a> - <a href="mentions_legal.html">Mentions légales</a></p>
                 </div>
             </div>
         </div>
     </footer>
+    <footer class="disappear-m">
+        <div class="footer-container">
+            <div class="text-light uniwars-semibold">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <a href="index.html"><img class="logo_footer" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo"></a>
+                        </div>  
+                        <div class="col-6 col-md-6">
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="index.html">Accueil</a></h5>
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="contact.html">Contact</a></h5>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="a_propos.html">Le Festival</a></h5>
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="billetterie.html">Billetterie</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <p class="text-center text-light pt-15 purista-medium disappear-m">Conditions générales de ventes - <a href="politique_de_confidentialite.html">Politique de confidentialité</a> - <a href="mentions_legal.html">Mentions légales</a></p>
+                </div> 
+            </div>
+        </div>
+    </footer>
+    
     <script href="assets/script/script.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
