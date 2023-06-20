@@ -892,7 +892,9 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     .nav-link {
         display: none;
     }
-    
+    #imgbilletterie {
+        margin-top: 300px;
+    }
 
 
 
