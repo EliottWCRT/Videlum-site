@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/vlr4aqz.css"> <!--lien des polices-->
-    <title>Accueil KMB</title> <!--Titre de la page-->
+    <title>Home KMB</title> <!--Titre de la page-->
 </head>
 <body>
     <!---------------------------Vidéo de fond------------------>
     <div class="container video_conteneur">
-        <video autoplay loop muted plays-inline class="back-video">
+        <video autoplay loop muted plays-inline class="back-video disappear">
             <source src="assets/ressource/video_fond.mp4" alt="degrade colore" type="video/mp4">
+        </video>
+        <video autoplay loop muted plays-inline class="back-video-responsive disappear-m">
+            <source src="assets/ressource/video responsive.mp4" alt="degrade colore" type="video/mp4">
         </video>
     </div>
     <!--------------------------Header-------------------------->
@@ -26,7 +29,7 @@
                         <a href="index_eng.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width : 85px; margin : 8.5px"></a>
                     </li>
                     <li class="nav-item mx-auto d-flex">       
-                        <a id="hnavbar" href="index_eng.html"><h4 class="text-header text-light pt-20">Home</h4></a>
+                        <a id="hnavbar" href="#"><h4 class="text-header text-light pt-20">Home</h4></a>
                     </li>
                     <li class="nav-item mx-auto d-flex">       
                         <a id="hnavbar" href="a_propos_eng.html"><h4 class="text-header text-light pt-20">The festival</h4></a>
@@ -59,7 +62,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark uniwars-semibold">
                 <div class="container">
                     <a href="index_eng.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width: 85px; margin: 8.5px"></a>
-                    <label id="toggle" class="navbar-toggler" for="toggle">
+                    <label id="toggle" class="navbar-toggler" for="toggle" style="margin-right: 20px;">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
@@ -67,7 +70,7 @@
                     <div class="collapse navbar-collapse"  id="additionalMenuItems">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item mx-auto">
-                                <a class="nav-link" href="index_eng.html"><h4 class="text-light pt-3">Home</h4></a>
+                                <a class="nav-link" href="#"><h4 class="text-light pt-3">Home</h4></a>
                             </li>
                             <li class="nav-item mx-auto">
                                 <a class="nav-link" href="a_propos_eng.html"><h4 class="text-light pt-3">The festival</h4></a>
@@ -100,44 +103,43 @@
                 });
             </script>
         </div>
-    <br><br><br>
     <content class="text-white">
         <div class="disappear">
-            <div class="content-margin"><br><br><br><br><br>
+            <div class="content-margin"><br><br><br><br><br><br><br><br>
                 <div class="row container-fluid">
                     <!--------------------------Dates et addresse-------------------------->
                     <div class="col">
                         <br>
-                        <h1 class="mt-5 txt-align-left uniwars-semibold pt-45">
+                        <h1 class="mt-5 txt-align-left uniwars-semibold pt-80">
                             Techno music<br>
                             festival<br><br>
                         </h1>
-                        <h1 class="txt-align-left purista-medium pt-45">
+                        <h1 class="txt-align-left purista-medium pt-80">
                             6 & 7 October 2023<br>
                             Parc des Expositions Caen<br><br>
                         </h1>
                         <div style="display: flex; justify-content: flex-start;">
-                            <h4 class="txtbtn2 pt-20"><a id="anonsouligne" href="billetterie_eng.html">
+                            <h4 class="txtbtn2 pt-25"><a id="anonsouligne" href="billetterie_eng.html">
                                 <button  class="btnaccueil2 uniwars-semibold">
                                         I reserve my ticket
                                     </button>
                                 </a>
                             </h4>
                         </div>
-                    </div>
+                    </div><br><br><br><br><br>
                     <!--------------------------Logo-------------------------->
                     <div class="col" style="display: flex; justify-content: flex-end">
                         <img class="logo_content-white" src="assets/ressource/kmb-blanc.png" alt="logo">
                     </div>
-                </div>
+                </div><br><br><br><br><br>
             </div>
         </div>
         <div class="disappear-m">
             <div class="content-margin">
-                <br><br><br>
                 <div class="row justify-content-center container-fluid">
                     <!--------------------------Logo-------------------------->
                     <div class="col text-center">
+                        <br><br><br><br><br>
                         <img class="logo_content-white" src="assets/ressource/kmb-blanc.png" alt="logo">
                     </div>
                     <!--------------------------Dates et adresse-------------------------->
@@ -160,12 +162,14 @@
                                 </a>
                             </h4>
                         </div>
+                        <br><br>
                     </div>
+                    
                 </div>
             </div>
         </div>
         </div>
-        <br><br><br><br>
+        
         <!--------------------------Description-------------------------->
         <div id="background">
             <div>
@@ -255,7 +259,6 @@
                         </div>
                     </div>
                 </div>
-                <br><br><br><br><br>
                 <div class="mt-5 mb-5">
                     <h1 class="text-center text-light mb-3 uniwars-semibold pt-80">follow us on the networks !</h1>
                     <br>
@@ -280,7 +283,7 @@
                         <div class="col-12 col-md-6">
                             <div class="row mt-5">
                                 <div class="col-6">
-                                    <h5 class="uniwars-semibold"><a class="footer-text" href="index_eng.html">Home</a></h5>
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="#">Home</a></h5>
                                     <h5 class="uniwars-semibold"><a class="footer-text" href="contact_eng.html">Contact</a></h5>
                                 </div>
                                 <div class="col-6">
@@ -301,7 +304,7 @@
                             </div>
                         </div>
                     </div>  
-                    <p class="text-center text-light pt-15 purista-medium disappear">General terms and conditions - <a href="politique_de_confidentialite_eng.html">Privacy policy</a> - <a href="mentions_legal_eng.html">Terms of use</a></p>
+                    <p class="text-center text-light pt-15 purista-medium disappear"><a href="condition_g_eng.html">General terms and conditions</a> - <a href="politique_de_confidentialite_eng.html">Privacy policy</a> - <a href="mentions_legal_eng.html">Terms of use</a></p>
                 </div>
             </div>
         </div>
@@ -317,7 +320,7 @@
                         <div class="col-6 col-md-6">
                             <div class="row mt-3">
                                 <div class="col-6">
-                                    <h5 class="uniwars-semibold"><a class="footer-text" href="index_eng.html">Home</a></h5>
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="#">Home</a></h5>
                                     <h5 class="uniwars-semibold"><a class="footer-text" href="contact_eng.html">Contact</a></h5>
                                 </div>
                                 <div class="col-6">
@@ -327,13 +330,11 @@
                             </div>
                         </div>
                     </div> 
-                    <p class="text-center text-light pt-15 purista-medium disappear">General terms and conditions - <a href="politique_de_confidentialite_eng.html">Privacy policy</a> - <a href="mentions_legal_eng.html">Terms of use</a></p>
+                    <p class="text-center text-light pt-15 purista-medium disappear-m"><a href="condition_g_eng.html">General terms and conditions</a> - <a href="politique_de_confidentialite_eng.html">Privacy policy</a> - <a href="mentions_legal_eng.html">Terms of use</a></p>
                 </div> 
             </div>
         </div>
     </footer>
-    
-
     <!--------------------------Script-------------------------->
     <script href="assets/script/script.js"></script>
 </body>

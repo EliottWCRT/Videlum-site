@@ -12,9 +12,14 @@
 <body>
     <!---------------------------Vidéo de fond------------------>
     <div class="container video_conteneur">
-        <video autoplay loop muted plays-inline class="back-video">
+        <video autoplay loop muted plays-inline class="back-video disappear">
             <source src="assets/ressource/video_fond.mp4" alt="degrade colore" type="video/mp4">
         </video>
+        <div class="video-wrapper">
+            <video autoplay loop muted plays-inline class="back-video-responsive disappear-m">
+                <source src="assets/ressource/video responsive.mp4" alt="degrade colore" type="video/mp4">
+            </video>
+        </div>
     </div>
     <!--------------------------Header-------------------------->
     <div class="disappear">
@@ -26,7 +31,7 @@
                         <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width : 85px; margin : 8.5px"></a>
                     </li>
                     <li class="nav-item mx-auto d-flex">       
-                        <a id="hnavbar" href="index.html"><h4 class="text-header text-light pt-20">Accueil</h4></a>
+                        <a id="hnavbar" href="#"><h4 class="text-header text-light pt-20">Accueil</h4></a>
                     </li>
                     <li class="nav-item mx-auto d-flex">       
                         <a id="hnavbar" href="a_propos.html"><h4 class="text-header text-light pt-20">Le Festival</h4></a>
@@ -59,7 +64,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark uniwars-semibold">
                 <div class="container">
                     <a href="index.html"><img class="logo" src="assets/ressource/logo_blanc_sans_fond.png" alt="logo" style="width: 85px; margin: 8.5px"></a>
-                    <label id="toggle" class="navbar-toggler" for="toggle">
+                    <label id="toggle" class="navbar-toggler" for="toggle" style="margin-right: 20px;">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
@@ -67,7 +72,7 @@
                     <div class="collapse navbar-collapse"  id="additionalMenuItems">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item mx-auto">
-                                <a class="nav-link" href="index.html"><h4 class="text-light pt-3">Accueil</h4></a>
+                                <a class="nav-link" href="#"><h4 class="text-light pt-3">Accueil</h4></a>
                             </li>
                             <li class="nav-item mx-auto">
                                 <a class="nav-link" href="a_propos.html"><h4 class="text-light pt-3">Le Festival</h4></a>
@@ -100,44 +105,44 @@
                 });
             </script>
         </div>
-    <br><br><br>
     <content class="text-white">
         <div class="disappear">
-            <div class="content-margin"><br><br><br><br><br>
+            <div class="content-margin"><br><br><br><br><br><br><br><br>
                 <div class="row container-fluid">
                     <!--------------------------Dates et addresse-------------------------->
                     <div class="col">
                         <br>
-                        <h1 class="mt-5 txt-align-left uniwars-semibold pt-45">
+                        <h1 class="mt-5 txt-align-left uniwars-semibold pt-80">
                             FESTIVAL DE<br>
                             MUSIQUE TECHNO<br><br>
                         </h1>
-                        <h1 class="txt-align-left purista-medium pt-45">
+                        <h1 class="txt-align-left purista-medium pt-80">
                             6 & 7 Octobre 2023<br>
                             Parc des Expositions Caen<br><br>
                         </h1>
                         <div style="display: flex; justify-content: flex-start;">
-                            <h4 class="txtbtn2 pt-20"><a id="anonsouligne" href="billetterie.html">
+                            <h4 class="txtbtn2 pt-25"><a id="anonsouligne" href="billetterie.html">
                                 <button  class="btnaccueil2 uniwars-semibold">
                                         je réserve mon billet
                                     </button>
                                 </a>
                             </h4>
                         </div>
-                    </div>
+                    </div><br><br><br><br><br>
                     <!--------------------------Logo-------------------------->
                     <div class="col" style="display: flex; justify-content: flex-end">
                         <img class="logo_content-white" src="assets/ressource/kmb-blanc.png" alt="logo">
                     </div>
-                </div>
+                </div><br><br><br><br><br>
             </div>
         </div>
         <div class="disappear-m">
             <div class="content-margin">
-                <br><br><br>
                 <div class="row justify-content-center container-fluid">
+                    
                     <!--------------------------Logo-------------------------->
                     <div class="col text-center">
+                        <br><br><br><br><br>
                         <img class="logo_content-white" src="assets/ressource/kmb-blanc.png" alt="logo">
                     </div>
                     <!--------------------------Dates et adresse-------------------------->
@@ -160,17 +165,18 @@
                                 </a>
                             </h4>
                         </div>
+                        <br><br>
                     </div>
                 </div>
             </div>
         </div>
         </div>
-        <br><br><br><br>
+
         <!--------------------------Description-------------------------->
         <div id="background">
             <div>
                 <div class="row container-fluid justify-content-center mb-5 ">
-                    <div class="text-center">
+                    <div class="text-center mt-5">
                         <h3 class="purista-medium mt-5 pt-25 content-margin">
                             Pour cette première édition, KMB festival s’installe au Parc des Expositions de Caen les 6 et 7 octobre 2023. <br>
                             Nous vous invitons à partager ce voyage musical en découvrant comment 9 femmes mixant aux quatre coins du monde transmettent une énergie enivrante issue d’une même passion : LA MUSIQUE TECHNO !  <br>
@@ -253,7 +259,6 @@
                         </div>
                     </div>
                 </div>
-                <br><br><br><br><br>
                 <div class="mt-5 mb-5">
                     <h1 class="text-center text-light mb-3 uniwars-semibold pt-80">Suivez-nous sur les réseaux !</h1>
                     <br>
@@ -278,7 +283,7 @@
                         <div class="col-12 col-md-6">
                             <div class="row mt-5">
                                 <div class="col-6">
-                                    <h5 class="uniwars-semibold"><a class="footer-text" href="index.html">Accueil</a></h5>
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="#">Accueil</a></h5>
                                     <h5 class="uniwars-semibold"><a class="footer-text" href="contact.html">Contact</a></h5>
                                 </div>
                                 <div class="col-6">
@@ -299,7 +304,7 @@
                             </div>
                         </div>
                     </div>  
-                    <p class="text-center text-light pt-15 purista-medium disappear">Conditions générales de ventes - <a href="politique_de_confidentialite.html">Politique de confidentialité</a> - <a href="mentions_legal.html">Mentions légales</a></p>
+                    <p class="text-center text-light pt-15 purista-medium disappear"><a href="condition_g.html">Conditions générales de ventes</a> - <a href="politique_de_confidentialite.html">Politique de confidentialité</a> - <a href="mentions_legal.html">Mentions légales</a></p>
                 </div>
             </div>
         </div>
@@ -315,7 +320,7 @@
                         <div class="col-6 col-md-6">
                             <div class="row mt-3">
                                 <div class="col-6">
-                                    <h5 class="uniwars-semibold"><a class="footer-text" href="index.html">Accueil</a></h5>
+                                    <h5 class="uniwars-semibold"><a class="footer-text" href="#">Accueil</a></h5>
                                     <h5 class="uniwars-semibold"><a class="footer-text" href="contact.html">Contact</a></h5>
                                 </div>
                                 <div class="col-6">
@@ -325,7 +330,7 @@
                             </div>
                         </div>
                     </div> 
-                    <p class="text-center text-light pt-15 purista-medium disappear-m">Conditions générales de ventes - <a href="politique_de_confidentialite.html">Politique de confidentialité</a> - <a href="mentions_legal.html">Mentions légales</a></p>
+                    <p class="text-center text-light pt-15 purista-medium disappear-m"><a href="condition_g.html">Conditions générales de ventes</a> - <a href="politique_de_confidentialite.html">Politique de confidentialité</a> - <a href="mentions_legal.html">Mentions légales</a></p>
                 </div> 
             </div>
         </div>

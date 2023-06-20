@@ -26,11 +26,11 @@
 }
 
 .pt-25 {
-    font-size: 15pt !important;
+    font-size: 18pt !important;
 }
 
 .pt-45 {
-    font-size: 20pt !important;
+    font-size: 22pt !important;
 }
 
 .pt-80 {
@@ -308,6 +308,10 @@ header {
     z-index: 9999;
 }
 
+.footer_condition_vente {
+    z-index: 9999;
+}
+
 .fullscreen-dark {
     position: fixed;
     top: 0;
@@ -398,6 +402,9 @@ header {
     margin-right: 500px;
     margin: 0% 0% 0px;
     
+}
+#hnavbar {
+    margin-top: 20px;
 }
 #hnavbar:hover {
     border-bottom: 1px solid white;
@@ -586,6 +593,19 @@ header {
         object-fit: cover;
     }
 
+    .back-video-responsive {
+        position: absolute;
+        right: 0;
+        top: 109px;
+        bottom: 0;
+        z-index: -1;
+        filter: blur(10px);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
     .video_conteneur {
         object-fit: cover; 
         width: 100%;
@@ -687,6 +707,7 @@ header {
         position: absolute !important;
         z-index: 9999;
     }
+
     .logo_footer {
         transition: filter 0.5s;
         width: 80px; 
@@ -871,10 +892,10 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     .nav-link {
         display: none;
     }
+    
 
 
 
-/* Tests */
 
 
 }
