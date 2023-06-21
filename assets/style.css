@@ -463,9 +463,15 @@ header {
     border-color:black;
  }
   /* Styles pour les écrans de largeur inférieure ou égale à 767px (téléphones mobiles) */
-@media (max-width: 720px) {
+@media (max-width: 850px) {
       
-    
+    .tablet {
+        display: none;
+    }
+
+    .telephone {
+        display: block;
+    }
     .header__burger {
         display: block;
         cursor: pointer;
@@ -647,7 +653,7 @@ header {
    /* Tests */
 
 
-@media (max-width: 720px) {
+@media (max-width: 850px) {
     nav .nav-list {
         display: grid;
         position: absolute;
@@ -692,7 +698,7 @@ input {
 
 
 /* Hide nav-link when burger menu is active */
-@media (max-width: 720px) {
+@media (max-width: 850px) {
     .row {
         margin-left: 0% !important;
         margin-right: 0% !important;
@@ -760,6 +766,16 @@ input {
     }
     .logo-reseaux {
         width: 50px;
+    }
+}
+
+@media (min-width: 600px) {
+    .tablet {
+       display: block;
+    }
+
+    .telephone {
+         display: none;
     }
 }
 @media (max-width: 400px) {
