@@ -255,6 +255,8 @@ header {
     width : 75px;
     margin: 10px;
 }
+
+
 .artistes {
     width: 275px;
     margin: 20px;
@@ -691,6 +693,10 @@ input {
 
 /* Hide nav-link when burger menu is active */
 @media (max-width: 720px) {
+    .row {
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
     .nav-link {
         display: none;
     }
@@ -751,6 +757,9 @@ input {
     .footer-container {
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .logo-reseaux {
+        width: 50px;
     }
 }
 @media (max-width: 400px) {
