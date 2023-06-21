@@ -526,8 +526,8 @@ header {
     }
 
     .content-margin {
-        margin-left: 75px;
-        margin-right: 75px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .margin-bottom-content {
         margin-bottom: 25px;
@@ -777,5 +777,11 @@ input {
     .partenaires {
         width : 200px;
         margin-left: 20px;
+    }
+
+    .logo_footer {
+        width: 80px; 
+        margin: 0px;
+        transition: filter 0.5s;
     }
 }
