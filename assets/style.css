@@ -785,9 +785,9 @@ input {
     }
 }
 
-@media (min-width:350px) {
+@media (max-width:350px) {
     .logo_content-white {
-        width : 200px; 
+        width : 175px; 
         margin : 0px;
     }
     
