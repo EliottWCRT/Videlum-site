@@ -117,7 +117,6 @@ header, footer {
 }
 
 
-
 /* =============== content =============== */
 
 body {
@@ -746,7 +745,7 @@ input {
 
     .logo_content-white {
         width : 200px; 
-        margin : 0px;
+        margin : 25px;
     }
 
     .artistes {
@@ -778,6 +777,8 @@ input {
          display: none;
     }
 }
+
+
 @media (max-width: 400px) {
     #textbox {
         font-size: 10pt !important;
