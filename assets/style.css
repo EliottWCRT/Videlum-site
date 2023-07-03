@@ -425,7 +425,7 @@ header {
 #emailcontact {
     position: absolute;
     z-index: 9998;
-    font-size: 45pt !important;
+    font-size: 35pt !important;
 }
 
 footer {
@@ -462,6 +462,62 @@ header {
     border-color:black;
  }
   /* Styles pour les écrans de largeur inférieure ou égale à 767px (téléphones mobiles) */
+
+@media (max-width: 1400px) {
+    /* ===============  Taille Polices   ==================*/
+
+    .pt-15 {
+        font-size: 6pt !important;
+    }
+
+    .pt-17 {
+        font-size: 8pt !important;
+    }
+    
+    .pt-20 {
+        font-size: 10pt !important;
+    }
+
+    .pt-25 {
+        font-size: 16pt !important;
+    }
+
+    .pt-45 {
+        font-size: 20pt !important;
+    }
+
+    .pt-80 {
+        font-size: 28pt !important;
+    }
+
+    .logo_content_Festival {
+        width : 375px; 
+        margin-left: 75px
+    }
+    .header-margin {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .text-content-margin {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .sous-header-margin {
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+
+    #emailcontact {
+        position: absolute;
+        z-index: 9998;
+        font-size: 25pt !important;
+        margin-right: 30px;
+    }
+
+}
+
 @media (max-width: 850px) {
       
     .tablet {
